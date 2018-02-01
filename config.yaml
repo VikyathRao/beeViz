@@ -1,0 +1,60 @@
+# CONFIGURATION FILE
+# ------------------
+# Modify this text file to provide information to beeViz about the
+# location of data files and which metadata to use.
+#
+# ====================================================================
+# Data files
+# ----------
+# Files may be specific in two parts: a parent directory that contains
+# all files (possibly in subdirectories) and the remainder of the file
+# path.
+# For example, if you specify
+#     directory.data:  "/home/user/dataset/04/"
+#     file.tracking:  "tracking/detections.txt"
+# then beeViz will assume that the tracking file is located at
+#     /home/user/dataset/04/tracking/detections.txt
+#
+# If an optional file is not available, set the filename to "".
+
+
+# Directory containing all the data files
+directory.data: "/home/vikyathrao/repositories/beeviz/data/"
+
+# Filenames of required files
+file.tracking: "beryl_2016-04/filtered_label_detections.txt"
+file.index: "beryl_2016-04/filtered_label_detections.idx"
+file.solar_events: "2016_solar_events.txt"
+file.metadata : "beryl_2016-04/metadata.csv"
+
+# Filenames of optional files
+file.trophallaxis: "beryl_2016-04/filtered_interactions.txt"
+file.laying: "beryl_2016-04/egg_laying_events_maxPPV_204px.txt"
+file.entrance: "beryl_2016-04/entrance_filtered_data.txt"
+file.kinetic_energy:  "beryl_2016-04/ke_timeseries.json"
+
+# --------------------------------------------------------------------
+# Metadata
+# --------
+# At a minimum, the metadata file listed above must contain a list of
+# all bee IDs for that dataset. If there are additional columns in
+# the metadata file that you want beeViz to read, you can specify
+# them below in the form
+#   "field title":  "column_name"
+
+metadata:
+  "bee":  "bee"
+  "specialist score":  "spl_score_wgt"
+  "generalist score":  "gen_score_wgt"
+  "source colony":  "colony"
+  "sequenced?":  "sequenced"
+  "foraging rank":  "rank_foraging"
+  "laying rank":  "rank_laying"
+  "generalist rank":  "rank_gen"
+  "lifespan":  "lifespan"
+  "total no. of interactions":  "num_ints"
+  "total duration of interactions":  "dur_ints"
+  "network degree":  "degree"
+  "no. of disappearances":  "num_disapps"
+
+# ====================================================================

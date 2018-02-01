@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>beeViz</title>
+    {{ bokeh_css }}
+    {{ bokeh_js }}
+    <style>
+      {% include 'styles.css' %}
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>beeViz: Visualizing honeybee movements and behaviour</h1>
+      <hr>
+      <!-- <p> -->
+      <!-- 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus egestas lorem non mattis.  -->
+      <!-- </p> -->
+
+      <p>
+
+      </p>
+
+      {{ plot_div|indent(8) }}
+      
+      <hr>
+      <p>
+      </p>
+
+      <p>
+
+	Features currently available:
+
+	<ul>
+	  <li>Begin or pause movie using Play/Pause button.</li>
+	  <li>Adjust framerate using the slider to set the time between two subsequent frames in the movie.</li>
+	  <li>Scroll to a particular time in the dataset using either the timestamp slider or the text box above it.</li>
+	  <li>Trophallaxis events are displayed by a red line joining a pair of bees.</li>
+	  <li>Egg-laying events are displayed using a circle around the bee.</li>
+	  <li>Bees can be coloured based on any field in the metadata.</li>
+	  <li>Hover above an individual bee to see its metadata.</li>
+	  <li>Track an individual bee by entering its ID into the text box and pressing Enter.</li>
+	  <li>When an individual bee is tracked, behaviour data over the course of its lifespan appears at the resolution of individual events.</li>
+	  <li>When an individual bee is tracked, its kinetic energy timeseries is displayed (if available).</li>
+	</ul> 
+      </p>
+
+      <!-- <div class="videoWrapper"> -->
+      <!--   <iframe width="420" height="315" src="https://www.youtube.com/embed/hVimVzgtD6w" frameborder="0" allowfullscreen></iframe> -->
+      <!-- </div> -->
+    </div>
+    {{ plot_script|indent(8) }}
+  </body>
+</html>

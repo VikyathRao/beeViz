@@ -1,0 +1,38 @@
+name: beeviz
+channels:
+- defaults
+dependencies:
+- bokeh=0.12.10=py35hfdb0b1d_0
+- ca-certificates=2017.08.26=h1d4fec5_0
+- certifi=2017.7.27.1=py35h19f42a1_0
+- colorcet=0.9.1=py35_0
+- intel-openmp=2018.0.0=h15fc484_7
+- jinja2=2.9.6=py35h90b8645_1
+- libedit=3.1=heed3624_0
+- libffi=3.2.1=h4deb6c0_3
+- libgcc-ng=7.2.0=h7cc24e2_2
+- libstdcxx-ng=7.2.0=h7a57d05_2
+- markupsafe=1.0=py35h4f4fcf6_1
+- mkl=2018.0.0=hb491cac_4
+- ncurses=6.0=h06874d7_1
+- numpy=1.13.3=py35hd829ed6_0
+- openssl=1.0.2l=h077ae2c_5
+- pandas=0.20.3=py35hd2a53da_2
+- pip=9.0.1=py35h7e7da9d_4
+- python=3.5.4=h0b4c808_22
+- python-dateutil=2.6.1=py35h90d5b31_1
+- pytz=2017.2=py35h9225bff_1
+- pyyaml=3.12=py35h46ef4ae_1
+- readline=7.0=hac23ff0_3
+- setuptools=36.5.0=py35ha8c1747_0
+- six=1.11.0=py35h423b573_1
+- sqlite=3.20.1=h6d8b0f3_1
+- tk=8.6.7=h5979e9b_1
+- tornado=4.5.2=py35hf879e1d_0
+- wheel=0.29.0=py35h601ca99_1
+- xz=5.2.3=h2bcbf08_1
+- yaml=0.1.7=h96e3832_1
+- zlib=1.2.11=hfbfcf68_1
+- pip:
+  - file-read-backwards==1.2.1
+
